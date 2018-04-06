@@ -1,0 +1,3 @@
+[submodule "n-back"]
+	path = n-back
+	url = https://github.com/n-back/n-back.git
