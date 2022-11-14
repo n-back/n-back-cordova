@@ -10,9 +10,10 @@ install  [yarn](https://yarnpkg.com/)
 ```
 git submodule update --init --recursive
 yarn
-yarn build
-cordova platform add android ios
+cd n-back && yarn build && cd -
+npx cordova platform add android ios
 yarn assets
-cordova run android
-cordova run ios
+npx cordova run android
+npx cordova run ios
+yarn global add cordova-hot-code-push-cli # chcp.json chcp.manifest
 ```
